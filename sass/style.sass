@@ -165,10 +165,12 @@ body
 
 .advantages
     background: url('../img/pattern 2.png') repeat center center
-    padding: 30px 0
+    padding: 10px 0
     &__content
         display: flex
-
+        justify-content: space-between
+        align-items: center
+        padding: 0px 45px 0px 80px
     &__title
         font-family: Noto Sans Arabic
         font-style: normal
@@ -176,10 +178,10 @@ body
         font-size: 28px
         line-height: 59px
         color: #fff
-        margin: 0
+        margin: 0 0 20px
     &__image
-        width: 80px
-        height: 70px
+        width: auto
+        height: auto
         margin-bottom: 20px
     &__text
         font-family: Noto Sans Arabic
@@ -205,6 +207,12 @@ body
                 left: -10%
             &::after
                 right: -17%
+    .advantages
+        &__content
+            flex-wrap: wrap
+        &__block
+            flex-basis: 50%
+            margin-bottom: 50px
 
 @media screen and ( max-width: 550px )
     .header
@@ -213,6 +221,10 @@ body
                 left: -20%
             &::after
                 right: -32%
+    .advantages
+        &__block
+            flex-basis: 100%
+
 
 @media screen and ( max-width: 320px )
     .header
@@ -249,6 +261,8 @@ body
             &_select
                 width: 100%
                 margin-bottom: 16px
+    .advantages
+        &__block
             
     
 
