@@ -165,7 +165,7 @@ body
 
 .advantages
     background: url('../img/pattern 2.png') repeat center center
-    padding: 10px 0
+    padding: 10px 0 20px
     &__content
         display: flex
         justify-content: space-between
@@ -197,6 +197,35 @@ body
         flex-direction: column
         align-items: center
         justify-content: center
+
+.bonus
+    background: url('../img/bonus_left_bg.png') no-repeat 6% 38px, 
+    url('../img/bonus_left_bg2.png') no-repeat -8% 100px, 
+    url('../img/bonus_right_bg.png') no-repeat 101% 55px,
+    url('../img/bonus_right_bg2.png') no-repeat 150% 240px,  
+    url('../img/bot_arr 1.png') no-repeat center 142px, 
+    url('../img/registration 1.png') no-repeat center center
+    background-size: auto, auto, auto, auto, auto, cover
+    padding: 33px 0 55px
+    &__content
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &__text-block
+        margin-bottom: 73px
+    &__text
+        font-weight: bold
+        font-size: 40px
+        line-height: 84px
+        text-align: center
+        &_white
+            color:#fff
+        &_yellow
+            color: #ffc800
+    &__100usd
+        margin-left: 20px
+        margin-bottom: 34px
         
                 
 
@@ -213,8 +242,17 @@ body
         &__block
             flex-basis: 50%
             margin-bottom: 50px
+    .bonus
+        background: url('../img/bot_arr 1.png') no-repeat center 142px, 
+        url('../img/registration 1.png') no-repeat center center
+        background-size: auto, cover
+        &__text-block
+         
 
 @media screen and ( max-width: 550px )
+    .form
+        &__submit
+            width: 300px
     .header
         &__content
             &::before
@@ -224,6 +262,18 @@ body
     .advantages
         &__block
             flex-basis: 100%
+    .bonus
+        background: url('../img/bot_arr 1.png') no-repeat center 150px, 
+        url('../img/registration 1.png') no-repeat center center
+        background-size: auto, cover
+        &__text-block
+            max-width: 260px
+            text-align: center
+        &__text
+            line-height: 48px
+        &__100usd
+            width: 70%
+            height: 70%
 
 
 @media screen and ( max-width: 320px )

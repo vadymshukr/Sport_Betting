@@ -283,7 +283,7 @@ body {
 
 .advantages {
   background: url("../img/pattern 2.png") repeat center center;
-  padding: 10px 0;
+  padding: 10px 0 20px;
 }
 
 .advantages__content {
@@ -342,6 +342,52 @@ body {
           justify-content: center;
 }
 
+.bonus {
+  background: url("../img/bonus_left_bg.png") no-repeat 6% 38px, url("../img/bonus_left_bg2.png") no-repeat -8% 100px, url("../img/bonus_right_bg.png") no-repeat 101% 55px, url("../img/bonus_right_bg2.png") no-repeat 150% 240px, url("../img/bot_arr 1.png") no-repeat center 142px, url("../img/registration 1.png") no-repeat center center;
+  background-size: auto, auto, auto, auto, auto, cover;
+  padding: 33px 0 55px;
+}
+
+.bonus__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bonus__text-block {
+  margin-bottom: 73px;
+}
+
+.bonus__text {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 84px;
+  text-align: center;
+}
+
+.bonus__text_white {
+  color: #fff;
+}
+
+.bonus__text_yellow {
+  color: #ffc800;
+}
+
+.bonus__100usd {
+  margin-left: 20px;
+  margin-bottom: 34px;
+}
+
 @media screen and (max-width: 768px) {
   .header__content::before {
     left: -10%;
@@ -358,9 +404,16 @@ body {
         flex-basis: 50%;
     margin-bottom: 50px;
   }
+  .bonus {
+    background: url("../img/bot_arr 1.png") no-repeat center 142px, url("../img/registration 1.png") no-repeat center center;
+    background-size: auto, cover;
+  }
 }
 
 @media screen and (max-width: 550px) {
+  .form__submit {
+    width: 300px;
+  }
   .header__content::before {
     left: -20%;
   }
@@ -370,6 +423,21 @@ body {
   .advantages__block {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .bonus {
+    background: url("../img/bot_arr 1.png") no-repeat center 150px, url("../img/registration 1.png") no-repeat center center;
+    background-size: auto, cover;
+  }
+  .bonus__text-block {
+    max-width: 260px;
+    text-align: center;
+  }
+  .bonus__text {
+    line-height: 48px;
+  }
+  .bonus__100usd {
+    width: 70%;
+    height: 70%;
   }
 }
 
