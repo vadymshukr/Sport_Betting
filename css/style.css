@@ -1,0 +1,406 @@
+@font-face {
+  font-family: "NotoSansArabic";
+  src: url("../fonts/NotoSansArabic-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NotoSansArabic";
+  src: url("../fonts/NotoSansArabic-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: "NotoSansArabic", sans-serif;
+  font-weight: normal;
+}
+
+.header {
+  background: url("../img/Group 154.png") no-repeat center center, url("../img/bg.png") no-repeat center center;
+  padding: 65px 0 80px;
+  overflow: hidden;
+}
+
+.header__content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__content::before, .header__content::after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.header__content::before {
+  z-index: 1;
+  top: -45px;
+  left: -0.5%;
+  height: 644px;
+  width: 350px;
+  background: url("../img/girl_left.png") no-repeat center center;
+  background-size: contain;
+}
+
+.header__content::after {
+  z-index: 0;
+  top: -34px;
+  right: -8%;
+  height: 633px;
+  width: 402px;
+  background: url("../img/girl_right.png") no-repeat center center;
+}
+
+.header__logo {
+  margin-bottom: 72px;
+  z-index: 2;
+}
+
+.header__wrapper {
+  position: relative;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.form {
+  position: relative;
+  z-index: 2;
+  margin-left: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 384px;
+  padding: 0px 8px;
+}
+
+.form__submit {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 76px;
+  text-align: center;
+  letter-spacing: 1.35px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 50px;
+  background: linear-gradient(89.2deg, #FFDC25 0.14%, rgba(255, 138, 0, 0.73) 99.29%), #FFD90F;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  width: 400px;
+}
+
+.form__name-text {
+  margin-bottom: 17px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 42px;
+  letter-spacing: 0.444444px;
+  color: #FFFFFF;
+}
+
+.form__checkbox-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 47px;
+  width: 100%;
+}
+
+.form__checkbox-block:hover svg {
+  opacity: 0.5;
+}
+
+.form__checkbox-block span {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  margin-right: 12px;
+}
+
+.form__checkbox-block label {
+  display: inline-block;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background: #FFC800;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__checkbox-block input {
+  display: none;
+}
+
+.form__checkbox-block input:checked + label svg {
+  opacity: 1;
+}
+
+.form__checkbox-block svg {
+  opacity: 0;
+}
+
+.form__phone-block {
+  width: 100%;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__phone-block .form__input_phone + .form__input_select {
+  margin-left: 8px;
+}
+
+.form__phone-block span {
+  font-size: 24px;
+}
+
+.form__input {
+  height: 64px;
+  background: #09223F;
+  border: 2px solid #366799;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15), 0px 15px 12px rgba(0, 0, 0, 0.11);
+          box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.15), 0px 15px 12px rgba(0, 0, 0, 0.11);
+  border-radius: 8px;
+  color: #fff;
+  font-family: "NotoSansArabic";
+}
+
+.form__input_phone {
+  width: 220px;
+  font-size: 28px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.form__input_phone::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form__input_phone:-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__input_phone::-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__input_phone::placeholder {
+  color: #fff;
+}
+
+.form__input_select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 160px;
+  font-size: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__input_select svg {
+  margin-left: 7px;
+}
+
+.form__input_name {
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: right;
+  padding: 0 20px;
+}
+
+.form__input_name::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form__input_name:-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__input_name::-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__input_name::placeholder {
+  color: #fff;
+}
+
+.advantages {
+  background: url("../img/pattern 2.png") repeat center center;
+  padding: 30px 0;
+}
+
+.advantages__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantages__title {
+  font-family: Noto Sans Arabic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 59px;
+  color: #fff;
+  margin: 0;
+}
+
+.advantages__image {
+  width: 80px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.advantages__text {
+  font-family: Noto Sans Arabic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 145%;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100px;
+}
+
+.advantages__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header__content::before {
+    left: -10%;
+  }
+  .header__content::after {
+    right: -17%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header__content::before {
+    left: -20%;
+  }
+  .header__content::after {
+    right: -32%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    background-size: cover;
+    padding: 40px 0;
+  }
+  .header__content::before, .header__content::after {
+    background-size: cover;
+    height: 100%;
+    width: 120%;
+    top: 130px;
+  }
+  .header__content::before {
+    left: -30%;
+  }
+  .header__content::after {
+    right: -52%;
+  }
+  .header__logo {
+    margin-bottom: 333px;
+  }
+  .form {
+    width: 272px;
+    padding: 0 24px;
+  }
+  .form__submit {
+    width: 288px;
+  }
+  .form__phone-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .form__phone-block .form__input_phone + .form__input_select {
+    margin-left: 0px;
+  }
+  .form__checkbox-block {
+    margin-bottom: 24px;
+  }
+  .form__input_name {
+    margin-bottom: 16px;
+  }
+  .form__input_phone {
+    width: 100%;
+  }
+  .form__input_select {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
